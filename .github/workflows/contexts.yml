@@ -4,7 +4,7 @@ jobs:
   print:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${ GITHUB_ACTOR }" # github コンテキストの参照
+      - run: echo "${GITHUB_ACTOR}" # 3.2.3　デフォルト環境変数
       - run: echo "${{ github.actor }}" # github コンテキストの参照
       - run: echo "${{ github.run_id }}" # github コンテキストの参照
       - run: echo "${{ github.head_ref }}" # github コンテキストの参照
