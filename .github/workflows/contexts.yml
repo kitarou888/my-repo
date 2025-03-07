@@ -5,3 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "${{ github.actor }}" # github コンテキストの参照
+      - run: echo "${{ github.run_id }}" # github コンテキストの参照
+      - run: echo "${{ github.head_ref }}" # github コンテキストの参照
+      - run: echo "${{ github.workspace }}" # github コンテキストの参照
+      - run: echo "${{ github.repository }}" # github コンテキストの参照
+      - run: echo "${{ github.repository_owner }}" # github コンテキストの参照
+      - run: echo "${{ github.event.pull_requests.title }}" # github コンテキストの参照
