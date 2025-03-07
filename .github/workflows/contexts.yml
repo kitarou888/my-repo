@@ -11,3 +11,9 @@ jobs:
       - run: echo "${{ github.repository }}" # github コンテキストの参照
       - run: echo "${{ github.repository_owner }}" # github コンテキストの参照
       - run: echo "${{ github.event.pull_requests.title }}" # github コンテキストの参照
+      - run: echo "${{ runner.name }}" # github コンテキストの参照
+      - run: echo "${{ runner.os }}" # github コンテキストの参照
+      - run: echo "${{ runner.arch }}" # github コンテキストの参照
+      - run: echo "${{ runner.temp }}" # github コンテキストの参照
+      - run: echo "${{ runner.tool_cache }}" # github コンテキストの参照
+      - run: echo "${{ runner.debug }}" # github コンテキストの参照
